@@ -4,7 +4,7 @@ import redis.clients.jedis.params.SetParams;
 
 import java.util.Set;
 
-public class RedisDemo {
+public class RedisDemoGeneric {
     public static void test(Jedis jedis) {
         jedis.flushAll();
         jedis.set("key","111");
@@ -44,6 +44,7 @@ public class RedisDemo {
 
 
     }
+
 
     public static void main(String[] args) {
         JedisPool jedisPool = new JedisPool("tcp://127.0.0.1:8888");
